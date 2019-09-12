@@ -1,0 +1,98 @@
+
+jsp is converted to servlets
+4 types:
+1:scriptlets
+2:Expressions
+3:declarations
+4:directives
+
+
+1:scriptlets
+<%
+%>
+<jsp:scriplet>
+</jsp:scriplet>
+
+
+anything written in scriptlet is equivalent to typing those lines inside service method
+                                                               service() kb chlta h
+
+2:Expressions
+<%=
+%>
+equivalent to writing 
+out.print()
+inside service method
+
+
+3:declaration
+<%!
+%>
+anything written in it will be a part of the converted class 
+
+
+4:directives
+<%@directive-name atr-name=value atr2-name=value ....%>
+it uses tagnames
+supported tagnames
+	page,
+	include,
+	taglib
+
+->include
+used to include contents of one jsp in another
+....................................similar output but technically different approach: include action 
+<%@ includse file="info.jsp"%>
+
+->page ...........
+used to give import statements
+<%@ page import="java.sql.*,java.util.*"%>
+<%@ page isELIgnore................
+
+->taglib
+used to import custom tags
+<%@ taglib uri="" prefix="" %>
+
+<ABC:A>
+</ABC:A>
+
+
+
+implicit objects of jsp
+	HttpServletRequest request
+	HttpServletResponse response
+	JspWriter out
+	ServletSession session
+	ServletConfig config
+	ServletContext application
+	
+	
+==========================================================================================
+
+
+
+MVC-MODEL VIEW CONTROLLER	
+
+Used for separation of concerns
+
+Layered Architecture:
+	1.PresentationLayer
+	2.Bussiness Logic Layer
+	3. Controlling Layer
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

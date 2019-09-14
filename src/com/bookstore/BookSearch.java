@@ -238,6 +238,12 @@ public class BookSearch extends Books {
 		try {	
 				String sub[]=request.getParameterValues("subjects");
 				PrintWriter out=response.getWriter();
+				System.out.println(sub==null);
+				if(sub==null) {
+					System.out.println(sub==null);
+					response.sendRedirect("ViewSubjectwise");
+				}
+				else {
 				if(sub.length<=0)
 				{
 					out.println("No Subjects Selected");
@@ -257,6 +263,7 @@ public class BookSearch extends Books {
 				
 				ResultSet rs=ps.executeQuery();
 				view(rs,request,response,"ViewSubjectwise");
+				}
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

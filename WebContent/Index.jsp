@@ -26,6 +26,7 @@ if(request.getSession().getAttribute("user")!=null){
 		<a href="SearchDownloadBooks.jsp">Search and Download Books</a><br>
 		<a href="ViewSubjectwise">View Subject-wise</a><br>
 		<a href="AddToCart"  style="visibility:<%=b%>">View Cart</a><br>
+		<a href="UpdateProfile.jsp" style="visibility:<%=b%>">View Cart</a><br>>
 		<a href="Login.jsp" style="visibility:<%=a%>">Login/SignUp</a><br>
 		<a href="Index.jsp?logout=true" style="visibility:<%=b%>">Logout></a>
 	</div>
